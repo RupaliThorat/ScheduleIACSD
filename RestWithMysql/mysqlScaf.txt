@@ -1,0 +1,11 @@
+ Scaffold-DbContext "server=localhost;port=3306;user=root;password=root123;database=dotnetdb" Pomelo.EntityFrameworkCore.MySql -OutputDir dbContext -f
+
+builder.Services.AddDbContextPool<DotnetdbContext>(opt =>
+{
+    opt.UseMySql(builder.Configuration.GetConnectionString("ConnectionString"),
+     ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("ConnectionString")),
+    builder =>
+    {
+        builder.EnableRetryOnFailure(5, TimeSpan.FromSeconds(10), null);
+    });
+});.UseMySQL(connectionString,  ServerVersion.AutoDetect(connectionString)));

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Pr1n8ENNBOodDkxjBPPFJDjUQ7R61L2zGjWzjNYPFvc=",
+  "Source": "RestWithMysql",
+  "BasePath": "_content/RestWithMysql",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
